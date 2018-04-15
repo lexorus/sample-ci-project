@@ -1,6 +1,8 @@
+os: osx
 osx_image: xcode9.3
 language: swift
 xcode_project: sample-ci-project.xcodeproj
 xcode_scheme: sample-ci-project
 
-depth: 1
+git:
+  depth: 1
