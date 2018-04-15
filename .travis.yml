@@ -4,7 +4,7 @@ language: swift
 xcode_project: sample-ci-project.xcodeproj
 xcode_scheme: sample-ci-project
 
-script: xcodebuild -showBuildSettings -scheme sample-ci-project -project ./sample-ci-project.xcodeproj
+script: fastlane test
 
 git:
   depth: 1
