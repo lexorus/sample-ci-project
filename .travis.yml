@@ -13,5 +13,13 @@ script:
   - swiftlint lint --config ./configs/swiftlint.yml
   - fastlane test
 
+notifications:
+  email:
+    recipients:
+      - celpand@gmail.com
+    on_success: always
+    on_failure: always
+
 git:
   depth: 1
+
