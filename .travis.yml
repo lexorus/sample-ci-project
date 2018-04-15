@@ -4,9 +4,14 @@ xcode_project: sample-ci-project.xcodeproj
 xcode_scheme: sample-ci-project
 
 before_install:
-  - gem update fastlane --no-ri --no-rdoc --no-document
+  - chmod +x ./scripts/install_swiftlint.sh
+  - ./scripts/install_swiftlint.sh
+  - chmod +x ./scripts/update_fastlane.sh
+  - ./scripts/update_fastlane.sh
 
-script: fastlane test
+script: 
+  - swiftlint lint --config ./configs/swiftlint.yml
+  - fastlane test
 
 git:
   depth: 1

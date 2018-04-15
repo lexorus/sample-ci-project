@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659EAF8B208372E700DB74C8 /* SomeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EAF8A208372E700DB74C8 /* SomeFile.swift */; };
 		65C57C0E208360C10043717D /* sample_ci_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C57C04208360C10043717D /* sample_ci_project.framework */; };
 		65C57C13208360C10043717D /* sample_ci_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C57C12208360C10043717D /* sample_ci_projectTests.swift */; };
 		65C57C15208360C10043717D /* sample_ci_project.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C57C07208360C10043717D /* sample_ci_project.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		659EAF8A208372E700DB74C8 /* SomeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFile.swift; sourceTree = "<group>"; };
 		65C57C04208360C10043717D /* sample_ci_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sample_ci_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C57C07208360C10043717D /* sample_ci_project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sample_ci_project.h; sourceTree = "<group>"; };
 		65C57C08208360C10043717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				65C57C07208360C10043717D /* sample_ci_project.h */,
+				659EAF8A208372E700DB74C8 /* SomeFile.swift */,
 				65C57C08208360C10043717D /* Info.plist */,
 			);
 			path = "sample-ci-project";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					65C57C03208360C10043717D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					65C57C0C208360C10043717D = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659EAF8B208372E700DB74C8 /* SomeFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		65C57C19208360C10043717D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lexorus.sample-ci-project";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		65C57C1A208360C10043717D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +395,7 @@
 		65C57C1C208360C10043717D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "sample-ci-projectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		65C57C1D208360C10043717D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "sample-ci-projectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
