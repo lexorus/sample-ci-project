@@ -1,36 +1,27 @@
-//
-//  sample_ci_projectTests.swift
-//  sample-ci-projectTests
-//
-//  Created by Dmitrii Celpan on 4/15/18.
-//  Copyright © 2018 lexorus. All rights reserved.
-//
-
 import XCTest
 @testable import sample_ci_project
 
 class SampleTests: XCTestCase {
+    func test_transformingSnakecaseStringToCamelcased_returnsStringInTheRightFormat() {
+        // GIVEN
+        let snakecasedString = "attack_on_titan"
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // WHEN
+        let lowerCamelcaseString = lowerCamelcasedString(from: snakecasedString)
+
+        // THEN
+        XCTAssertEqual(lowerCamelcaseString, "attackOnTitan")
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+    func test_transformingArrayOfDifferentSnakecasedStringFormatsToCamelcase_returnsArrayOfStringsInTheRightFormat() {
+        // GIVEN
+        let arrayOfSnakecaseStrings = ["bravest_warriors", "the_blue_exorcist", "onePiece", "dragon_ball_z"]
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        // WHEN
+        let arrayOfLowerCamelcasedStrings = arrayOfSnakecaseStrings.map(lowerCamelcasedString)
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        // THEN
+        let expectedResult = ["bravestWarriors", "theBlueExorcist", "onePiece", "dragonBallZ"]
+        XCTAssertEqual(arrayOfLowerCamelcasedStrings, expectedResult)
     }
-
 }
