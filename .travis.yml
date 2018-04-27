@@ -10,7 +10,7 @@ before_install:
   - ./scripts/update_fastlane.sh
 
 script: 
-  - swiftlint lint --config ./configs/swiftlint.yml
+  - swiftlint lint --config ./configs/swiftlint.yml --strict
   - fastlane test
 
 notifications:
