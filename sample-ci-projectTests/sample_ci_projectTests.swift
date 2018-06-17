@@ -10,7 +10,7 @@ class SampleTests: XCTestCase {
         let lowerCamelcaseString = lowerCamelcasedString(from: snakecasedString)
 
         // THEN
-        XCTAssertEqual(lowerCamelcaseString, "attackOnTitan")
+        XCTAssertEqual(lowerCamelcaseString, "attack OnTitan")
     }
 
     func test_transformingArrayOfDifferentSnakecasedStringFormatsToCamelcase_returnsArrayOfStringsInTheRightFormat() {
