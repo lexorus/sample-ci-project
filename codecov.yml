@@ -1,0 +1,6 @@
+ignore:
+  - "./configs"
+  - "./fastlane"
+  - "./scripts"
+  - "./sample-ci-projectTests"
+  
