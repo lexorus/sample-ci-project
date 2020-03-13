@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		659EAF8B208372E700DB74C8 /* SomeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EAF8A208372E700DB74C8 /* SomeFile.swift */; };
 		65C57C0E208360C10043717D /* sample_ci_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65C57C04208360C10043717D /* sample_ci_project.framework */; };
-		65C57C13208360C10043717D /* sample_ci_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C57C12208360C10043717D /* sample_ci_projectTests.swift */; };
+		65C57C13208360C10043717D /* SomeFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C57C12208360C10043717D /* SomeFileTests.swift */; };
 		65C57C15208360C10043717D /* sample_ci_project.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C57C07208360C10043717D /* sample_ci_project.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17D1F41241BDD630009AB2D /* AnotherFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D1F40241BDD630009AB2D /* AnotherFile.swift */; };
+		B17D1F43241BDDCD0009AB2D /* AnotherFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D1F42241BDDCD0009AB2D /* AnotherFileTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +31,10 @@
 		65C57C07208360C10043717D /* sample_ci_project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sample_ci_project.h; sourceTree = "<group>"; };
 		65C57C08208360C10043717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C57C0D208360C10043717D /* sample-ci-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-ci-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65C57C12208360C10043717D /* sample_ci_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_ci_projectTests.swift; sourceTree = "<group>"; };
+		65C57C12208360C10043717D /* SomeFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeFileTests.swift; sourceTree = "<group>"; };
 		65C57C14208360C10043717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17D1F40241BDD630009AB2D /* AnotherFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherFile.swift; sourceTree = "<group>"; };
+		B17D1F42241BDDCD0009AB2D /* AnotherFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherFileTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			children = (
 				65C57C07208360C10043717D /* sample_ci_project.h */,
 				659EAF8A208372E700DB74C8 /* SomeFile.swift */,
+				B17D1F40241BDD630009AB2D /* AnotherFile.swift */,
 				65C57C08208360C10043717D /* Info.plist */,
 			);
 			path = "sample-ci-project";
@@ -83,7 +88,8 @@
 		65C57C11208360C10043717D /* sample-ci-projectTests */ = {
 			isa = PBXGroup;
 			children = (
-				65C57C12208360C10043717D /* sample_ci_projectTests.swift */,
+				65C57C12208360C10043717D /* SomeFileTests.swift */,
+				B17D1F42241BDDCD0009AB2D /* AnotherFileTests.swift */,
 				65C57C14208360C10043717D /* Info.plist */,
 			);
 			path = "sample-ci-projectTests";
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				659EAF8B208372E700DB74C8 /* SomeFile.swift in Sources */,
+				B17D1F41241BDD630009AB2D /* AnotherFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65C57C13208360C10043717D /* sample_ci_projectTests.swift in Sources */,
+				65C57C13208360C10043717D /* SomeFileTests.swift in Sources */,
+				B17D1F43241BDDCD0009AB2D /* AnotherFileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
