@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gem update fastlane --no-document
+bundle update fastlane
