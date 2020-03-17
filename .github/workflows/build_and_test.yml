@@ -8,6 +8,7 @@ on: push
 jobs:
   build_and_test:
     name: Build and Test
+    runs-on: macos-latest
     strategy:
       xcode: ['/Applications/Xcode_11.3.app/Contents/Developer']
 
@@ -25,6 +26,7 @@ jobs:
 
   code_cov:
     name: Upload to codecov.io
+    runs-on: macos-latest
     needs: build_and_test
 
     steps:
