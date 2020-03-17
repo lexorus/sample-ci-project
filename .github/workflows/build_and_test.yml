@@ -12,16 +12,17 @@ jobs:
   build_and_test:
     name: Build and Test
     runs-on: macos-latest
+
     strategy:
       matrix:
-        destination: ["OS=13.1,name=iPhone 11 Pro"]
+        destination: ["name=iPhone 11"]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v1
 
       - name: Test
-        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "sample-ci-project.xcodeproj" -scheme "sample-ci-project" -destination "${{ matrix.destination }}" clean test | xcpretty
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   code_cov:
     name: Upload to codecov.io
