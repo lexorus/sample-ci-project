@@ -7,7 +7,7 @@ platform :ios do
 			scheme: "sample-ci-project",
 			project: "sample-ci-project.xcodeproj",
 			clean: true,
-			code_coverage: true,
+			code_coverage: false,
 			skip_slack: true,
 			sdk: "iphonesimulator"
 			)
