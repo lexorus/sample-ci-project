@@ -9,8 +9,8 @@ env:
   DEVELOPER_DIR: /Applications/Xcode_11.3.app/Contents/Developer
 
 jobs:
-  build_and_test:
-    name: Build and Test
+  test:
+    name: Test and upload codecov
     runs-on: macos-latest
 
     strategy:
@@ -24,11 +24,5 @@ jobs:
       - name: Test
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" -enableCodeCoverage YES clean test | xcpretty
 
-  code_cov:
-    name: Upload to codecov.io
-    runs-on: macos-latest
-    needs: build_and_test
-
-    steps:
       - name: Upload to codecov.io
         run: bash <(curl -s https://codecov.io/bash)
