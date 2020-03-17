@@ -30,5 +30,7 @@ jobs:
       - name: Test
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" -enableCodeCoverage YES clean test | xcpretty
 
-      - name: Upload to codecov.io
-        run: bash <(curl -s https://codecov.io/bash)
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: true
