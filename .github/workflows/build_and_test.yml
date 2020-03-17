@@ -10,7 +10,7 @@ env:
 
 jobs:
   test:
-    name: Test and upload codecov
+    name: Test and codecov upload
     runs-on: macos-latest
 
     strategy:
@@ -20,6 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+
+      - name: Swiftlint
+        run: |
+          chmod +x ./scripts/install_swiftlint.sh
+          ./scripts/install_swiftlint.sh
+          swiftlint lint --config ./configs/swiftlint.yml --strict
 
       - name: Test
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" -enableCodeCoverage YES clean test | xcpretty
