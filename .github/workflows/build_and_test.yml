@@ -1,16 +1,19 @@
 name: Branch push CI
 
-on: push
-
 # Documentation with macOS virtual environment: 
 # https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md
+
+on:
+  push
+  pull_request
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_11.3.app/Contents/Developer
 
 jobs:
   build_and_test:
     name: Build and Test
     runs-on: macos-latest
-    strategy:
-      xcode: ['/Applications/Xcode_11.3.app/Contents/Developer']
 
     steps:
       - name: Checkout
@@ -21,8 +24,6 @@ jobs:
 
       - name: Build and test
         run: bundle exec fastlane test
-        env:
-          DEVELOPER_DIR: ${{ matrix.xcode }}
 
   code_cov:
     name: Upload to codecov.io
