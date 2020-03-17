@@ -12,16 +12,16 @@ jobs:
   build_and_test:
     name: Build and Test
     runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ["OS=13.1,name=iPhone 11 Pro"]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Bundle install
-        run: bundle install
-
-      - name: Build and test
-        run: bundle exec fastlane test
+      - name: Test
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "sample-ci-project.xcodeproj" -scheme "sample-ci-project" -destination "${{ matrix.destination }}" clean test | xcpretty
 
   code_cov:
     name: Upload to codecov.io
