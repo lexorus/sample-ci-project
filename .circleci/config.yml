@@ -1,0 +1,41 @@
+version: 2.1
+
+defaults: &defaults
+  macos:
+    xcode: 11.3.1
+  parallelism: 1
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - run:
+          name: Swiftlint
+          command: |
+            chmod +x ./scripts/install_swiftlint.sh
+            ./scripts/install_swiftlint.sh
+            swiftlint lint --config ./configs/swiftlint.yml --strict
+
+      - run:
+          name: Set Ruby Version
+          command: echo "ruby-2.4" > ~/.ruby-version
+
+      - run:
+          name: Install ruby dependencies
+          command: bundle check || bundle install
+          environment:
+              BUNDLE_JOBS: 4
+              BUNDLE_RETRY: 3
+
+      - run:
+          name: Test
+          command: bundle exec fastlane test
+
+      - store_test_results:
+          path: test_output
+
+      - store_artifacts:
+          path: test_output
+          destination: scan-output
