@@ -28,6 +28,7 @@ jobs:
           swiftlint lint --config ./configs/swiftlint.yml --strict
 
       - name: Danger
+        if: github.event_name == 'pull_request'
         run: |
           brew install danger/tap/danger-swift
           danger-swift ci --failOnErrors
