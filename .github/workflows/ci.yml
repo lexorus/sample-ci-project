@@ -31,6 +31,8 @@ jobs:
         run: |
           brew install danger/tap/danger-swift
           danger-swift ci --failOnErrors
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" -enableCodeCoverage YES clean test | xcpretty
