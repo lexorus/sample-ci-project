@@ -12,7 +12,7 @@ if danger.github.pullRequest.title.contains("WIP") {
 }
 
 // Check if no code was updated without tests
-let testsUpdated = danger.git.modifiedFiles.contains { $0.hasPrefix("Tests") }
+let testsUpdated = danger.git.modifiedFiles.contains { $0.hasSuffix("Tests.swift") }
 if !modifiedSwiftFiles.isEmpty && !testsUpdated {
     warn("Swift files were changed, but the tests remained unmodified. Consider updating or adding to the tests to match the code changes.")
 }
