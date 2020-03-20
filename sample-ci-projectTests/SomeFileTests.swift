@@ -1,7 +1,7 @@
 import XCTest
 @testable import sample_ci_project
 
-class SampleTests: XCTestCase {
+final class SampleTests: XCTestCase {
     func test_transformingSnakecaseStringToCamelcased_returnsStringInTheRightFormat() {
         // GIVEN
         let snakecasedString = "attack_on_titan"

@@ -1,0 +1,741 @@
+Starting Danger PR on lexorus/sample-ci-project#11
+You don't have a DANGER_GITHUB_API_TOKEN set up, this is optional, but TBH, you want to do this
+Check out: http://danger.systems/js/guides/the_dangerfile.html#working-on-your-dangerfile
+{
+  "danger": {
+    "git": {
+      "modified_files": [
+        ".github/workflows/ci.yml"
+      ],
+      "created_files": [
+        "Dangerfile.swift"
+      ],
+      "deleted_files": [],
+      "commits": [
+        {
+          "sha": "8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+          "parents": [
+            "1467bd4515aa361963b9faad69918af4ca4d3ebc"
+          ],
+          "author": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T13:03:43Z"
+          },
+          "committer": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T13:09:28Z"
+          },
+          "message": "Add Dangerfile.swift",
+          "tree": {
+            "sha": "ce40430e5983f067d6fb838b7136a91ca47999ba",
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/ce40430e5983f067d6fb838b7136a91ca47999ba"
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb"
+        },
+        {
+          "sha": "f51604a6bedbb433e4deea4b06c729f802e3589c",
+          "parents": [
+            "8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb"
+          ],
+          "author": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T13:42:51Z"
+          },
+          "committer": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T14:05:20Z"
+          },
+          "message": "Run danger-swift as part of github actions",
+          "tree": {
+            "sha": "c5f165354c5f2fbf0928a0672b09c152c2c1cd9d",
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/c5f165354c5f2fbf0928a0672b09c152c2c1cd9d"
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f51604a6bedbb433e4deea4b06c729f802e3589c"
+        },
+        {
+          "sha": "f02bc555b090a8224a2b777f562fd363b6b10681",
+          "parents": [
+            "f51604a6bedbb433e4deea4b06c729f802e3589c"
+          ],
+          "author": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T14:13:40Z"
+          },
+          "committer": {
+            "name": "Dmitrii Celpan",
+            "email": "celpand@gmail.com",
+            "date": "2020-03-19T14:22:13Z"
+          },
+          "message": "Add token for danger-swift",
+          "tree": {
+            "sha": "dbb7bbd0a36ee33c7eada6c4060fe732c056613a",
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/dbb7bbd0a36ee33c7eada6c4060fe732c056613a"
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f02bc555b090a8224a2b777f562fd363b6b10681"
+        }
+      ]
+    },
+    "github": {
+      "issue": {
+        "url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11",
+        "repository_url": "https://api.github.com/repos/lexorus/sample-ci-project",
+        "labels_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11/labels{/name}",
+        "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11/comments",
+        "events_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11/events",
+        "html_url": "https://github.com/lexorus/sample-ci-project/pull/11",
+        "id": 584398889,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzkwOTkyNjcz",
+        "number": 11,
+        "title": "Add Dangerfile.swift",
+        "user": {
+          "login": "lexorus",
+          "id": 10234295,
+          "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+          "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lexorus",
+          "html_url": "https://github.com/lexorus",
+          "followers_url": "https://api.github.com/users/lexorus/followers",
+          "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+          "organizations_url": "https://api.github.com/users/lexorus/orgs",
+          "repos_url": "https://api.github.com/users/lexorus/repos",
+          "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lexorus/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 902325037,
+            "node_id": "MDU6TGFiZWw5MDIzMjUwMzc=",
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/labels/do%20not%20merge",
+            "name": "do not merge",
+            "color": "ff0000",
+            "default": false,
+            "description": ""
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2020-03-19T13:07:35Z",
+        "updated_at": "2020-03-19T14:24:59Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "pull_request": {
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11",
+          "html_url": "https://github.com/lexorus/sample-ci-project/pull/11",
+          "diff_url": "https://github.com/lexorus/sample-ci-project/pull/11.diff",
+          "patch_url": "https://github.com/lexorus/sample-ci-project/pull/11.patch"
+        },
+        "body": "",
+        "closed_by": null
+      },
+      "pr": {
+        "url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11",
+        "id": 390992673,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzkwOTkyNjcz",
+        "html_url": "https://github.com/lexorus/sample-ci-project/pull/11",
+        "diff_url": "https://github.com/lexorus/sample-ci-project/pull/11.diff",
+        "patch_url": "https://github.com/lexorus/sample-ci-project/pull/11.patch",
+        "issue_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11",
+        "number": 11,
+        "state": "open",
+        "locked": false,
+        "title": "Add Dangerfile.swift",
+        "user": {
+          "login": "lexorus",
+          "id": 10234295,
+          "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+          "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lexorus",
+          "html_url": "https://github.com/lexorus",
+          "followers_url": "https://api.github.com/users/lexorus/followers",
+          "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+          "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+          "organizations_url": "https://api.github.com/users/lexorus/orgs",
+          "repos_url": "https://api.github.com/users/lexorus/repos",
+          "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/lexorus/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-03-19T13:07:35Z",
+        "updated_at": "2020-03-19T14:24:59Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "539bc19cc0409cf65ba37d82239d85ff7aaaed94",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 902325037,
+            "node_id": "MDU6TGFiZWw5MDIzMjUwMzc=",
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/labels/do%20not%20merge",
+            "name": "do not merge",
+            "color": "ff0000",
+            "default": false,
+            "description": ""
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "commits_url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11/commits",
+        "review_comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11/comments",
+        "review_comment_url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11/comments",
+        "statuses_url": "https://api.github.com/repos/lexorus/sample-ci-project/statuses/f02bc555b090a8224a2b777f562fd363b6b10681",
+        "head": {
+          "label": "lexorus:feature/integrate-danger-swift",
+          "ref": "feature/integrate-danger-swift",
+          "sha": "f02bc555b090a8224a2b777f562fd363b6b10681",
+          "user": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 129599127,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMjk1OTkxMjc=",
+            "name": "sample-ci-project",
+            "full_name": "lexorus/sample-ci-project",
+            "private": false,
+            "owner": {
+              "login": "lexorus",
+              "id": 10234295,
+              "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+              "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/lexorus",
+              "html_url": "https://github.com/lexorus",
+              "followers_url": "https://api.github.com/users/lexorus/followers",
+              "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+              "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+              "organizations_url": "https://api.github.com/users/lexorus/orgs",
+              "repos_url": "https://api.github.com/users/lexorus/repos",
+              "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/lexorus/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "html_url": "https://github.com/lexorus/sample-ci-project",
+            "description": "Tha sample project on which travis CI will be configured",
+            "fork": false,
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project",
+            "forks_url": "https://api.github.com/repos/lexorus/sample-ci-project/forks",
+            "keys_url": "https://api.github.com/repos/lexorus/sample-ci-project/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/lexorus/sample-ci-project/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/lexorus/sample-ci-project/teams",
+            "hooks_url": "https://api.github.com/repos/lexorus/sample-ci-project/hooks",
+            "issue_events_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/lexorus/sample-ci-project/events",
+            "assignees_url": "https://api.github.com/repos/lexorus/sample-ci-project/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/lexorus/sample-ci-project/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/lexorus/sample-ci-project/tags",
+            "blobs_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/lexorus/sample-ci-project/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/lexorus/sample-ci-project/languages",
+            "stargazers_url": "https://api.github.com/repos/lexorus/sample-ci-project/stargazers",
+            "contributors_url": "https://api.github.com/repos/lexorus/sample-ci-project/contributors",
+            "subscribers_url": "https://api.github.com/repos/lexorus/sample-ci-project/subscribers",
+            "subscription_url": "https://api.github.com/repos/lexorus/sample-ci-project/subscription",
+            "commits_url": "https://api.github.com/repos/lexorus/sample-ci-project/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/lexorus/sample-ci-project/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/lexorus/sample-ci-project/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/lexorus/sample-ci-project/merges",
+            "archive_url": "https://api.github.com/repos/lexorus/sample-ci-project/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/lexorus/sample-ci-project/downloads",
+            "issues_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/lexorus/sample-ci-project/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/lexorus/sample-ci-project/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/lexorus/sample-ci-project/labels{/name}",
+            "releases_url": "https://api.github.com/repos/lexorus/sample-ci-project/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/lexorus/sample-ci-project/deployments",
+            "created_at": "2018-04-15T10:22:48Z",
+            "updated_at": "2020-03-17T15:41:59Z",
+            "pushed_at": "2020-03-19T14:22:25Z",
+            "git_url": "git://github.com/lexorus/sample-ci-project.git",
+            "ssh_url": "git@github.com:lexorus/sample-ci-project.git",
+            "clone_url": "https://github.com/lexorus/sample-ci-project.git",
+            "svn_url": "https://github.com/lexorus/sample-ci-project",
+            "homepage": null,
+            "size": 28,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": null,
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "lexorus:master",
+          "ref": "master",
+          "sha": "1467bd4515aa361963b9faad69918af4ca4d3ebc",
+          "user": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 129599127,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMjk1OTkxMjc=",
+            "name": "sample-ci-project",
+            "full_name": "lexorus/sample-ci-project",
+            "private": false,
+            "owner": {
+              "login": "lexorus",
+              "id": 10234295,
+              "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+              "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/lexorus",
+              "html_url": "https://github.com/lexorus",
+              "followers_url": "https://api.github.com/users/lexorus/followers",
+              "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+              "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+              "organizations_url": "https://api.github.com/users/lexorus/orgs",
+              "repos_url": "https://api.github.com/users/lexorus/repos",
+              "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/lexorus/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "html_url": "https://github.com/lexorus/sample-ci-project",
+            "description": "Tha sample project on which travis CI will be configured",
+            "fork": false,
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project",
+            "forks_url": "https://api.github.com/repos/lexorus/sample-ci-project/forks",
+            "keys_url": "https://api.github.com/repos/lexorus/sample-ci-project/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/lexorus/sample-ci-project/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/lexorus/sample-ci-project/teams",
+            "hooks_url": "https://api.github.com/repos/lexorus/sample-ci-project/hooks",
+            "issue_events_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/lexorus/sample-ci-project/events",
+            "assignees_url": "https://api.github.com/repos/lexorus/sample-ci-project/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/lexorus/sample-ci-project/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/lexorus/sample-ci-project/tags",
+            "blobs_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/lexorus/sample-ci-project/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/lexorus/sample-ci-project/languages",
+            "stargazers_url": "https://api.github.com/repos/lexorus/sample-ci-project/stargazers",
+            "contributors_url": "https://api.github.com/repos/lexorus/sample-ci-project/contributors",
+            "subscribers_url": "https://api.github.com/repos/lexorus/sample-ci-project/subscribers",
+            "subscription_url": "https://api.github.com/repos/lexorus/sample-ci-project/subscription",
+            "commits_url": "https://api.github.com/repos/lexorus/sample-ci-project/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/lexorus/sample-ci-project/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/lexorus/sample-ci-project/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/lexorus/sample-ci-project/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/lexorus/sample-ci-project/merges",
+            "archive_url": "https://api.github.com/repos/lexorus/sample-ci-project/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/lexorus/sample-ci-project/downloads",
+            "issues_url": "https://api.github.com/repos/lexorus/sample-ci-project/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/lexorus/sample-ci-project/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/lexorus/sample-ci-project/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/lexorus/sample-ci-project/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/lexorus/sample-ci-project/labels{/name}",
+            "releases_url": "https://api.github.com/repos/lexorus/sample-ci-project/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/lexorus/sample-ci-project/deployments",
+            "created_at": "2018-04-15T10:22:48Z",
+            "updated_at": "2020-03-17T15:41:59Z",
+            "pushed_at": "2020-03-19T14:22:25Z",
+            "git_url": "git://github.com/lexorus/sample-ci-project.git",
+            "ssh_url": "git@github.com:lexorus/sample-ci-project.git",
+            "clone_url": "https://github.com/lexorus/sample-ci-project.git",
+            "svn_url": "https://github.com/lexorus/sample-ci-project",
+            "homepage": null,
+            "size": 28,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": null,
+            "forks": 0,
+            "open_issues": 1,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11"
+          },
+          "html": {
+            "href": "https://github.com/lexorus/sample-ci-project/pull/11"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/issues/11/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/pulls/11/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/lexorus/sample-ci-project/statuses/f02bc555b090a8224a2b777f562fd363b6b10681"
+          }
+        },
+        "author_association": "OWNER",
+        "merged": false,
+        "mergeable": true,
+        "rebaseable": true,
+        "mergeable_state": "unstable",
+        "merged_by": null,
+        "comments": 2,
+        "review_comments": 0,
+        "maintainer_can_modify": false,
+        "commits": 3,
+        "additions": 36,
+        "deletions": 0,
+        "changed_files": 2
+      },
+      "commits": [
+        {
+          "sha": "8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+          "node_id": "MDY6Q29tbWl0MTI5NTk5MTI3OjhmNTk4YWExYTIyYjZlM2I5ZmQ3ODkzYzBkNmU2NzlmNGU2MmIwZWI=",
+          "commit": {
+            "author": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T13:03:43Z"
+            },
+            "committer": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T13:09:28Z"
+            },
+            "message": "Add Dangerfile.swift",
+            "tree": {
+              "sha": "ce40430e5983f067d6fb838b7136a91ca47999ba",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/ce40430e5983f067d6fb838b7136a91ca47999ba"
+            },
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/commits/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+            "comment_count": 0,
+            "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null
+            }
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+          "html_url": "https://github.com/lexorus/sample-ci-project/commit/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+          "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb/comments",
+          "author": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "committer": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "parents": [
+            {
+              "sha": "1467bd4515aa361963b9faad69918af4ca4d3ebc",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/1467bd4515aa361963b9faad69918af4ca4d3ebc",
+              "html_url": "https://github.com/lexorus/sample-ci-project/commit/1467bd4515aa361963b9faad69918af4ca4d3ebc"
+            }
+          ]
+        },
+        {
+          "sha": "f51604a6bedbb433e4deea4b06c729f802e3589c",
+          "node_id": "MDY6Q29tbWl0MTI5NTk5MTI3OmY1MTYwNGE2YmVkYmI0MzNlNGRlZWE0YjA2YzcyOWY4MDJlMzU4OWM=",
+          "commit": {
+            "author": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T13:42:51Z"
+            },
+            "committer": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T14:05:20Z"
+            },
+            "message": "Run danger-swift as part of github actions",
+            "tree": {
+              "sha": "c5f165354c5f2fbf0928a0672b09c152c2c1cd9d",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/c5f165354c5f2fbf0928a0672b09c152c2c1cd9d"
+            },
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/commits/f51604a6bedbb433e4deea4b06c729f802e3589c",
+            "comment_count": 0,
+            "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null
+            }
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f51604a6bedbb433e4deea4b06c729f802e3589c",
+          "html_url": "https://github.com/lexorus/sample-ci-project/commit/f51604a6bedbb433e4deea4b06c729f802e3589c",
+          "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f51604a6bedbb433e4deea4b06c729f802e3589c/comments",
+          "author": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "committer": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "parents": [
+            {
+              "sha": "8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb",
+              "html_url": "https://github.com/lexorus/sample-ci-project/commit/8f598aa1a22b6e3b9fd7893c0d6e679f4e62b0eb"
+            }
+          ]
+        },
+        {
+          "sha": "f02bc555b090a8224a2b777f562fd363b6b10681",
+          "node_id": "MDY6Q29tbWl0MTI5NTk5MTI3OmYwMmJjNTU1YjA5MGE4MjI0YTJiNzc3ZjU2MmZkMzYzYjZiMTA2ODE=",
+          "commit": {
+            "author": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T14:13:40Z"
+            },
+            "committer": {
+              "name": "Dmitrii Celpan",
+              "email": "celpand@gmail.com",
+              "date": "2020-03-19T14:22:13Z"
+            },
+            "message": "Add token for danger-swift",
+            "tree": {
+              "sha": "dbb7bbd0a36ee33c7eada6c4060fe732c056613a",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/trees/dbb7bbd0a36ee33c7eada6c4060fe732c056613a"
+            },
+            "url": "https://api.github.com/repos/lexorus/sample-ci-project/git/commits/f02bc555b090a8224a2b777f562fd363b6b10681",
+            "comment_count": 0,
+            "verification": {
+              "verified": false,
+              "reason": "unsigned",
+              "signature": null,
+              "payload": null
+            }
+          },
+          "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f02bc555b090a8224a2b777f562fd363b6b10681",
+          "html_url": "https://github.com/lexorus/sample-ci-project/commit/f02bc555b090a8224a2b777f562fd363b6b10681",
+          "comments_url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f02bc555b090a8224a2b777f562fd363b6b10681/comments",
+          "author": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "committer": {
+            "login": "lexorus",
+            "id": 10234295,
+            "node_id": "MDQ6VXNlcjEwMjM0Mjk1",
+            "avatar_url": "https://avatars0.githubusercontent.com/u/10234295?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lexorus",
+            "html_url": "https://github.com/lexorus",
+            "followers_url": "https://api.github.com/users/lexorus/followers",
+            "following_url": "https://api.github.com/users/lexorus/following{/other_user}",
+            "gists_url": "https://api.github.com/users/lexorus/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/lexorus/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/lexorus/subscriptions",
+            "organizations_url": "https://api.github.com/users/lexorus/orgs",
+            "repos_url": "https://api.github.com/users/lexorus/repos",
+            "events_url": "https://api.github.com/users/lexorus/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/lexorus/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "parents": [
+            {
+              "sha": "f51604a6bedbb433e4deea4b06c729f802e3589c",
+              "url": "https://api.github.com/repos/lexorus/sample-ci-project/commits/f51604a6bedbb433e4deea4b06c729f802e3589c",
+              "html_url": "https://github.com/lexorus/sample-ci-project/commit/f51604a6bedbb433e4deea4b06c729f802e3589c"
+            }
+          ]
+        }
+      ],
+      "reviews": [],
+      "requested_reviewers": {
+        "users": [],
+        "teams": []
+      },
+      "thisPR": {
+        "number": 11,
+        "repo": "sample-ci-project",
+        "owner": "lexorus"
+      }
+    },
+    "settings": {
+      "github": {
+        "accessToken": "NO_T...",
+        "additionalHeaders": {}
+      },
+      "cliArgs": {}
+    }
+  }
+}

@@ -27,6 +27,14 @@ jobs:
           ./scripts/install_swiftlint.sh
           swiftlint lint --config ./configs/swiftlint.yml --strict
 
+      - name: Danger
+        if: github.event_name == 'pull_request'
+        run: |
+          brew install danger/tap/danger-swift
+          danger-swift ci --failOnErrors
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Test
         run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme "sample-ci-project" -project "sample-ci-project.xcodeproj" -destination "${{ matrix.destination }}" -enableCodeCoverage YES clean test | xcpretty
 
